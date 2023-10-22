@@ -60,7 +60,7 @@ def bakery_by_id(id):
         }
     
         bakery_dict["baked_goods"].append(baked_good_dict)
-        res = make_response(
+    res = make_response(
             jsonify(bakery_dict),
             200
         )
@@ -80,7 +80,7 @@ def baked_goods_by_price():
         }
 
         baked_goods_list.append(baked_good_dict)
-        RES = make_response(
+    RES = make_response(
             jsonify(baked_goods_list),
             200
         )
